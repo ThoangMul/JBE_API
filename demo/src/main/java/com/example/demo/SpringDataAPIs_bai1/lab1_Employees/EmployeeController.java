@@ -1,7 +1,5 @@
-package com.example.demo.controller;
+package com.example.demo.SpringDataAPIs_bai1.lab1_Employees;
 
-import com.example.demo.dto.EmployeeRequest;
-import com.example.demo.dto.EmployeeResponse;
 import com.example.demo.service.EmployeeService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

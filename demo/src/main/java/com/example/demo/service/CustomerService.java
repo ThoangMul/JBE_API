@@ -1,11 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.dto.CustomerRequest;
-import com.example.demo.dto.CustomerResponse;
-import com.example.demo.entity.Customers;
+import com.example.demo.SpringDataAPIs_bai1.lab2_Customers.CustomerRequest;
+import com.example.demo.SpringDataAPIs_bai1.lab2_Customers.CustomerResponse;
+import com.example.demo.SpringDataAPIs_bai1.lab2_Customers.Customers;
 import com.example.demo.exception.NotFoundException;
-import com.example.demo.mapper.CustomerMapper;
-import com.example.demo.repository.CustomerRepository;
+import com.example.demo.SpringDataAPIs_bai1.lab2_Customers.CustomerMapper;
+import com.example.demo.SpringDataAPIs_bai1.lab2_Customers.CustomerRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

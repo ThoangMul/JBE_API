@@ -1,7 +1,12 @@
-package com.example.demo.dto;
+package com.example.demo.SpringDataAPIs_bai1.lab2_Customers;
+
+import jakarta.validation.constraints.NotBlank;
 
 public class CustomerRequest {
+
+    @NotBlank(message = "Customer name is required")
     private String customerName;
+
     private String contactName;
     private String address;
     private String city;

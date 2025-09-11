@@ -1,8 +1,4 @@
-package com.example.demo.mapper;
-
-import com.example.demo.entity.Employee;
-import com.example.demo.dto.EmployeeRequest;
-import com.example.demo.dto.EmployeeResponse;
+package com.example.demo.SpringDataAPIs_bai1.lab1_Employees;
 
 public class EmployeeMapper {
 

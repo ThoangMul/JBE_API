@@ -1,32 +1,12 @@
-package com.example.demo.entity;
+package com.example.demo.SpringDataAPIs_bai1.lab2_Customers;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "customers")
-public class Customers {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "customer_id")
+public class CustomerResponse {
     private int customerId;
-
-    @Column(name = "customer_name", nullable = false)
     private String customerName;
-
-    @Column(name = "contact_name")
     private String contactName;
-
-    @Column(name = "address")
     private String address;
-
-    @Column(name = "city")
     private String city;
-
-    @Column(name = "postal_code")
     private String postalCode;
-
-    @Column(name = "country")
     private String country;
 
     public int getCustomerId() {

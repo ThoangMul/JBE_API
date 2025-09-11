@@ -1,12 +1,20 @@
-package com.example.demo.dto;
+package com.example.demo.SpringDataAPIs_bai1.lab1_Employees;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Past;
 import java.time.LocalDate;
 
-public class EmployeeResponse {
+public class EmployeeRequest {
 
+    @NotBlank(message = "Lastname is required")
     private String lastName;
+
+    @NotBlank(message = "Firstname is required")
     private String firstName;
+
+    @Past(message = "Birthdate must be in the past")
     private LocalDate birthDate;
+
     private int supervisorId;
 
     public String getLastName() {

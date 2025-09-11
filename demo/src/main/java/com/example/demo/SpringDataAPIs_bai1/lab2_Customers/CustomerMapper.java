@@ -1,8 +1,4 @@
-package com.example.demo.mapper;
-
-import com.example.demo.dto.CustomerRequest;
-import com.example.demo.dto.CustomerResponse;
-import com.example.demo.entity.Customers;
+package com.example.demo.SpringDataAPIs_bai1.lab2_Customers;
 
 public class CustomerMapper {
 

@@ -1,10 +1,7 @@
-package com.example.demo.repository;
+package com.example.demo.SpringDataAPIs_bai1.lab2_Customers;
 
-import com.example.demo.entity.Customers;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customers, Integer> {

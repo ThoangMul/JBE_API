@@ -1,11 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.dto.EmployeeRequest;
-import com.example.demo.dto.EmployeeResponse;
-import com.example.demo.entity.Employee;
+import com.example.demo.SpringDataAPIs_bai1.lab1_Employees.EmployeeRequest;
+import com.example.demo.SpringDataAPIs_bai1.lab1_Employees.EmployeeResponse;
+import com.example.demo.SpringDataAPIs_bai1.lab1_Employees.Employee;
 import com.example.demo.exception.NotFoundException;
-import com.example.demo.mapper.EmployeeMapper;
-import com.example.demo.repository.EmployeeRepository;
+import com.example.demo.SpringDataAPIs_bai1.lab1_Employees.EmployeeMapper;
+import com.example.demo.SpringDataAPIs_bai1.lab1_Employees.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

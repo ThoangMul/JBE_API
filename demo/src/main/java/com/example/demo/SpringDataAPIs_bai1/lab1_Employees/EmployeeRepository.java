@@ -1,6 +1,5 @@
-package com.example.demo.repository;
+package com.example.demo.SpringDataAPIs_bai1.lab1_Employees;
 
-import com.example.demo.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

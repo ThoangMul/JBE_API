@@ -1,21 +1,44 @@
-package com.example.demo.dto;
+package com.example.demo.SpringDataAPIs_bai1.lab1_Employees;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Past;
+import com.example.demo.SpringDataAPIs_bai2.Order.Order;
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
-public class EmployeeRequest {
+@Entity
+@Table(name = "employees")
+public class Employee {
 
-    @NotBlank(message = "Lastname is required")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "employee_id")
+    private int id;
+
+    @Column(name = "last_name")
     private String lastName;
 
-    @NotBlank(message = "Firstname is required")
+    @Column(name = "first_name")
     private String firstName;
 
-    @Past(message = "Birthdate must be in the past")
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
+    @Column(name = "supervisor_id")
     private int supervisorId;
+
+    // Employee Details
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Order> orders = new HashSet<>();
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getLastName() {
         return lastName;
